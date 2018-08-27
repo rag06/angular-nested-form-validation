@@ -1,0 +1,11 @@
+<div formGroupName="loginForm">
+    <div class="">
+      <label>Username: </label>
+      <input type="text" formControlName="username"/>
+      <app-input-error-messages [formControlObject]="loginForm.controls['username']" [messageList]="errorMessageList.username"></app-input-error-messages>
+
+      <label>Password: </label>
+      <input type="password" formControlName="password" />
+     <app-input-error-messages [formControlObject]="loginForm.controls['password']" [messageList]="errorMessageList.password"></app-input-error-messages>
+    </div>
+</div>

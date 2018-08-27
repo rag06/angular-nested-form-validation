@@ -1,0 +1,6 @@
+<div *ngIf="formControlObject.invalid && (formControlObject.dirty || formControlObject.touched)">
+  <div *ngFor="let error of formControlObject.errors | keyvalue">
+      {{messageList[error.key]}}
+
+  </div>
+</div>
